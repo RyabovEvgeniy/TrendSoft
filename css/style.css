@@ -16,12 +16,14 @@ body {
 .title {
   font-size: 50px;
   font-weight: 700;
+  color: #fff;
   text-transform: uppercase;
 }
 
 .subtitle {
   font-size: 40px;
   font-weight: 700;
+  color: #000;
   text-transform: uppercase;
 }
 .subtitle span {
@@ -98,4 +100,57 @@ body {
 }
 .lang__item.active:hover {
   color: #f83718;
+}
+
+.solution {
+  background-color: #F83718;
+}
+.solution__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 104px 30px;
+}
+.solution__title {
+  max-width: 544px;
+  margin-bottom: 30px;
+}
+.solution__text {
+  line-height: 1.5;
+  color: #fff;
+  max-width: 468px;
+}
+.solution__text:not(:last-child) {
+  margin-bottom: 30px;
+}
+.solution__image {
+  position: relative;
+}
+.solution__image::before {
+  position: absolute;
+  content: "";
+  background: url(../img/solution-decor1.svg);
+  width: 181px;
+  height: 168px;
+  left: -20px;
+  bottom: -10px;
+}
+.solution__image::after {
+  position: absolute;
+  content: "";
+  background: url(../img/solution-decor2.svg);
+  width: 169px;
+  height: 168px;
+  right: 0;
+  top: 70px;
+}
+.solution__img {
+  position: relative;
+  z-index: 10;
 }
