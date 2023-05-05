@@ -36,6 +36,13 @@ body {
 	}
 }
 
+.section-title {
+	font-weight: 700;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
 .btn {
 	padding: 9px 28px;
 	background-color: #F83718;
@@ -46,6 +53,10 @@ body {
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
 	color: #ffffff;
+	transition: all 0.3s ease;
+	&:hover {
+		background-color: #EE816C;
+	}
 }
 
 // header
@@ -274,7 +285,7 @@ body {
 }
 
 // planning
-.planning {	
+.planning {
 
 	// .planning__container
 
@@ -283,12 +294,13 @@ body {
 
 	&__body {
 		margin-top: -200px;
+		margin-bottom: 50px;
 		border: 2px solid #f9f9f9;
 		position: relative;		
 		&::before {
 			position: absolute;
 			content: "";
-			background: url(../img/planning-decor.svg);
+			background: url(../img/decor-red.svg);
 			width: 168px;
 			height: 168px;
 			left: -27px;
@@ -328,10 +340,6 @@ body {
 	// .planning__title
 
 	&__title {
-		font-weight: 700;
-		font-size: 24px;
-		text-transform: uppercase;
-		color: #000000;
 		margin-bottom: 30px;
 	}
 
@@ -349,3 +357,79 @@ body {
 	}
 }
 
+// budget
+.budget {
+	background-color: #F9F9F9;
+	padding-top: 283px;
+	margin-top: -280px;
+
+	// .budget__container
+
+	&__container {
+	}
+
+	// .budget__body
+
+	&__body {
+		margin-bottom: 50px;
+		border: 2px solid #f9f9f9;
+		position: relative;		
+		&::before {
+			position: absolute;
+			content: "";
+			background: url(../img/decor-red.svg);
+			width: 168px;
+			height: 168px;
+			right: -27px;
+			bottom: -27px;
+		}
+	}
+
+	// .budget__inner
+
+	&__inner {
+		background-color: #fff;
+		padding: 50px 85px;
+		display: flex;
+		align-items: center;
+		gap: 60px;
+		position: relative;
+		z-index: 99
+	}
+
+	// .budget__content
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .budget__title
+
+	&__title {
+		margin-bottom: 30px;
+	}
+
+	// .budget__text
+
+	&__text {
+		max-width: 365px;
+		margin-bottom: 30px;
+	}
+
+	// .budget__link
+
+	&__link {
+		align-self: flex-start;
+	}
+
+	// .budget__image
+
+	&__image {
+	}
+
+	// .budget__img
+
+	&__img {
+	}
+}
