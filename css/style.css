@@ -30,6 +30,18 @@ body {
   color: #f83718;
 }
 
+.btn {
+  padding: 9px 28px;
+  background-color: #F83718;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,4 +221,56 @@ body {
   font-size: 26px;
   line-height: 1.5;
   color: #000000;
+}
+
+.planning__body {
+  margin-top: -200px;
+  border: 2px solid #f9f9f9;
+  position: relative;
+}
+.planning__body::before {
+  position: absolute;
+  content: "";
+  background: url(../img/planning-decor.svg);
+  width: 168px;
+  height: 168px;
+  left: -27px;
+  bottom: -27px;
+}
+.planning__inner {
+  background-color: #fff;
+  padding: 50px 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+  position: relative;
+  z-index: 99;
+}
+.planning__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.planning__title {
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.planning__text {
+  max-width: 365px;
+  margin-bottom: 30px;
+}
+.planning .planning__link {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }

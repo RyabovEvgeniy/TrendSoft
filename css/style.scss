@@ -36,6 +36,18 @@ body {
 	}
 }
 
+.btn {
+	padding: 9px 28px;
+	background-color: #F83718;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 120%;
+	text-align: center;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
 // header
 .header {
 	// .header__container
@@ -213,7 +225,6 @@ body {
 		text-align: center;
 		margin: 0 auto;
 		margin-bottom: 30px;
-
 	}
 
 	// .service__items
@@ -261,3 +272,80 @@ body {
 		color: #000000;
 	}
 }
+
+// planning
+.planning {	
+
+	// .planning__container
+
+	&__container {
+	}
+
+	&__body {
+		margin-top: -200px;
+		border: 2px solid #f9f9f9;
+		position: relative;		
+		&::before {
+			position: absolute;
+			content: "";
+			background: url(../img/planning-decor.svg);
+			width: 168px;
+			height: 168px;
+			left: -27px;
+			bottom: -27px;
+		}
+	}
+
+	// .planning__inner
+
+	&__inner {
+		background-color: #fff;
+		padding: 50px 85px;
+		display: flex;
+		align-items: center;
+		gap: 60px;
+		position: relative;
+		z-index: 99;
+	}
+
+	// .planning__image
+
+	&__image {
+	}
+
+	// .planning__img
+
+	&__img {
+	}
+
+	// .planning__content
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .planning__title
+
+	&__title {
+		font-weight: 700;
+		font-size: 24px;
+		text-transform: uppercase;
+		color: #000000;
+		margin-bottom: 30px;
+	}
+
+	// .planning__text
+
+	&__text {
+		max-width: 365px;
+		margin-bottom: 30px;
+	}
+
+	// .planning__link
+
+	.planning__link {
+		align-self: flex-start;
+	}
+}
+
