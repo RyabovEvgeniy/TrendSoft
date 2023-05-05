@@ -38,6 +38,7 @@ body {
 }
 
 .btn {
+  display: inline-block;
   padding: 9px 28px;
   background-color: #F83718;
   font-weight: 700;
@@ -343,7 +344,6 @@ body {
   margin-top: -280px;
 }
 .pre-production__body {
-  margin-bottom: 50px;
   border: 2px solid #f9f9f9;
   position: relative;
 }
@@ -388,4 +388,85 @@ body {
 .pre-production__link {
   -ms-flex-item-align: start;
       align-self: flex-start;
+}
+
+.casting {
+  background-color: #F9F9F9;
+  text-align: center;
+  padding-top: 100px;
+}
+.casting__title {
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.casting__text {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 550px;
+}
+.casting__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+.casting__link {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.casting__body {
+  position: relative;
+  position: relative;
+}
+.casting__body::before {
+  position: absolute;
+  content: "";
+  background: url(../img/decor-red.svg);
+  width: 168px;
+  height: 168px;
+  left: -10px;
+  bottom: -27px;
+}
+.casting__body::after {
+  position: absolute;
+  content: "";
+  background: url(../img/decor-red.svg);
+  width: 168px;
+  height: 168px;
+  right: -10px;
+  top: -27px;
+}
+.casting__image {
+  position: relative;
+  z-index: 99;
+}
+.item-casting {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.item-casting__count {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #f83718;
+}
+.item-casting__desc {
+  font-size: 26px;
+  line-height: 1.5;
+  color: #000000;
 }

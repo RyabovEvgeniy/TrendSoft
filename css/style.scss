@@ -44,6 +44,7 @@ body {
 }
 
 .btn {
+	display: inline-block;
 	padding: 9px 28px;
 	background-color: #F83718;
 	font-weight: 700;
@@ -448,7 +449,7 @@ body {
 	// .pre-production__body
 
 	&__body {
-		margin-bottom: 50px;
+		// margin-bottom: 50px;
 		border: 2px solid #f9f9f9;
 		position: relative;		
 		&::before {
@@ -510,3 +511,114 @@ body {
 		align-self: flex-start;
 	}
 }
+
+// casting
+.casting {
+	background-color: #F9F9F9;
+	text-align: center;
+	padding-top: 100px;
+
+	// .casting__container
+
+	&__container {
+	}
+
+	// .casting__title
+
+	&__title {
+		font-size: 34px;
+		margin-bottom: 30px;
+	}
+
+	// .casting__text
+
+	&__text {
+		margin: 0 auto;
+		margin-bottom: 30px;
+		max-width: 550px;
+	}
+
+	// .casting__items
+
+	&__items {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+	}
+
+	// .casting__item
+
+	&__item {
+	}
+
+	// .casting__link
+
+	&__link {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	// .casting__body
+
+	&__body {
+		position: relative;		
+		&::before {
+			position: absolute;
+			content: "";
+			background: url(../img/decor-red.svg);
+			width: 168px;
+			height: 168px;
+			left: -10px;
+			bottom: -27px;
+		}
+		position: relative;		
+		&::after {
+			position: absolute;
+			content: "";
+			background: url(../img/decor-red.svg);
+			width: 168px;
+			height: 168px;
+			right: -10px;
+			top: -27px;
+		}
+	}
+
+	// .casting__image
+
+	&__image {
+		position: relative;
+		z-index: 99
+	}
+
+	// .casting__img
+
+	&__img {
+	}
+}
+
+.item-casting {
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	// .item-casting__count
+
+	&__count {
+		font-weight: 700;
+		font-size: 40px;
+		text-transform: uppercase;
+		color: #f83718;
+	}
+
+	// .item-casting__desc
+
+	&__desc {
+		font-size: 26px;
+		line-height: 1.5;
+		color: #000000;
+	}
+}
+
+
