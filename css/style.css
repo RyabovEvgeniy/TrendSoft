@@ -337,3 +337,55 @@ body {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
+.pre-production {
+  background-color: #F9F9F9;
+  padding-top: 283px;
+  margin-top: -280px;
+}
+.pre-production__body {
+  margin-bottom: 50px;
+  border: 2px solid #f9f9f9;
+  position: relative;
+}
+.pre-production__body::before {
+  position: absolute;
+  content: "";
+  background: url(../img/decor-red.svg);
+  width: 168px;
+  height: 168px;
+  left: -27px;
+  bottom: -27px;
+}
+.pre-production__inner {
+  background-color: #fff;
+  padding: 50px 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+  position: relative;
+  z-index: 99;
+}
+.pre-production__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.pre-production__title {
+  margin-bottom: 30px;
+}
+.pre-production__text {
+  max-width: 365px;
+  margin-bottom: 30px;
+}
+.pre-production__link {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}

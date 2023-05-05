@@ -433,3 +433,80 @@ body {
 	&__img {
 	}
 }
+
+//pre-production
+.pre-production {
+	background-color: #F9F9F9;
+	padding-top: 283px;
+	margin-top: -280px;
+
+	// .pre-production__container
+
+	&__container {
+	}
+
+	// .pre-production__body
+
+	&__body {
+		margin-bottom: 50px;
+		border: 2px solid #f9f9f9;
+		position: relative;		
+		&::before {
+			position: absolute;
+			content: "";
+			background: url(../img/decor-red.svg);
+			width: 168px;
+			height: 168px;
+			left: -27px;
+			bottom: -27px;
+		}
+	}
+
+	// .pre-production__inner
+
+	&__inner {
+		background-color: #fff;
+		padding: 50px 85px;
+		display: flex;
+		align-items: center;
+		gap: 60px;
+		position: relative;
+		z-index: 99;
+	}
+
+	// .pre-production__image
+
+	&__image {
+	}
+
+	// .pre-production__img
+
+	&__img {
+	}
+
+	// .pre-production__content
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .pre-production__title
+
+	&__title {
+		margin-bottom: 30px;
+	}
+
+	// .pre-production__text
+
+	&__text {
+		max-width: 365px;
+		margin-bottom: 30px;
+	}
+
+	// .pre-production__link
+
+	&__link {
+		align-self: flex-start;
+	}
+}
