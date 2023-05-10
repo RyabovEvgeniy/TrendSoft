@@ -1,6 +1,6 @@
 body {
 	font-family: "Ubuntu", sans-serif;
-	background: #fff;
+	background: #F9F9F9;
 	color: #1b1925;
 	font-size: 16px;
 	font-weight: 300;
@@ -470,7 +470,7 @@ body {
 		padding: 50px 85px;
 		display: flex;
 		align-items: center;
-		gap: 60px;
+		gap: 45px;
 		position: relative;
 		z-index: 99;
 	}
@@ -620,5 +620,156 @@ body {
 		color: #000000;
 	}
 }
+
+// toolz
+.toolz {
+	// text-align: center;
+	padding-top: 100px;
+
+	// .toolz__container
+
+	&__container {
+	}
+
+	// .toolz__title
+
+	&__title {
+		max-width: 628px;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 47px;
+	}
+
+	// .toolz__body
+
+	&__body {
+		position: relative;		
+		&::before {
+			position: absolute;
+			content: "";
+			background: url(../img/decor-white.svg);
+			width: 168px;
+			height: 168px;
+			left: -27px;
+			bottom: -27px;
+		}
+		&::after {
+			position: absolute;
+			content: "";
+			background: url(../img/decor-red.svg);
+			width: 168px;
+			height: 168px;
+			right: -27px;
+			top: -27px;
+		}
+	}
+
+	// .toolz__inner
+
+	&__inner {
+		background-color: #fff;
+		padding: 50px 85px;
+		display: flex;
+		align-items: center;
+		gap: 45px;
+		position: relative;
+		z-index: 99;
+	}
+
+	// .toolz__image
+
+	&__image {
+	}
+
+	// .toolz__img
+
+	&__img {
+	}
+
+	// .toolz__content
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .toolz__text
+
+	&__text {
+		margin-bottom: 30px;
+	}
+
+	// .toolz__link
+
+	&__link {
+		align-self: flex-start;
+	}
+}
+
+.content-toolz {
+	&__title {
+		margin-bottom: 30px;
+	}
+}
+
+// features
+.features {
+	background-color: #01AFEB;
+	margin-top: -250px;
+	padding: 275px 30px 50px;
+
+	// .features__container
+
+	&__container {
+	}
+
+	// .features__items
+
+	&__items {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+	// .features__item
+
+	&__item {
+		flex: 0 1 25%;
+	}
+}
+.item-features {
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+
+	// .item-features__img
+
+	&__img {
+		margin-bottom: 30px;
+	}
+
+	// .item-features__desc
+
+	&__desc {
+		font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+		margin-bottom: 6px;
+		color: #fff;
+	}
+
+	// .item-features__text
+
+	&__text {
+		font-weight: 400;
+		line-height: 1.5;
+		text-align: center;
+	}
+}
+
+
 
 
