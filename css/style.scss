@@ -1,6 +1,6 @@
 body {
 	font-family: "Ubuntu", sans-serif;
-	background: #F9F9F9;
+	background: #f9f9f9;
 	color: #1b1925;
 	font-size: 16px;
 	font-weight: 300;
@@ -46,7 +46,7 @@ body {
 .btn {
 	display: inline-block;
 	padding: 9px 28px;
-	background-color: #F83718;
+	background-color: #f83718;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 120%;
@@ -56,7 +56,7 @@ body {
 	color: #ffffff;
 	transition: all 0.3s ease;
 	&:hover {
-		background-color: #EE816C;
+		background-color: #ee816c;
 	}
 }
 
@@ -287,7 +287,6 @@ body {
 
 // planning
 .planning {
-
 	// .planning__container
 
 	&__container {
@@ -297,7 +296,7 @@ body {
 		margin-top: -200px;
 		margin-bottom: 50px;
 		border: 2px solid #f9f9f9;
-		position: relative;		
+		position: relative;
 		&::before {
 			position: absolute;
 			content: "";
@@ -360,7 +359,7 @@ body {
 
 // budget
 .budget {
-	background-color: #F9F9F9;
+	background-color: #f9f9f9;
 	padding-top: 283px;
 	margin-top: -280px;
 
@@ -374,7 +373,7 @@ body {
 	&__body {
 		margin-bottom: 50px;
 		border: 2px solid #f9f9f9;
-		position: relative;		
+		position: relative;
 		&::before {
 			position: absolute;
 			content: "";
@@ -395,7 +394,7 @@ body {
 		align-items: center;
 		gap: 60px;
 		position: relative;
-		z-index: 99
+		z-index: 99;
 	}
 
 	// .budget__content
@@ -437,7 +436,7 @@ body {
 
 //pre-production
 .pre-production {
-	background-color: #F9F9F9;
+	background-color: #f9f9f9;
 	padding-top: 283px;
 	margin-top: -280px;
 
@@ -451,7 +450,7 @@ body {
 	&__body {
 		// margin-bottom: 50px;
 		border: 2px solid #f9f9f9;
-		position: relative;		
+		position: relative;
 		&::before {
 			position: absolute;
 			content: "";
@@ -514,7 +513,7 @@ body {
 
 // casting
 .casting {
-	background-color: #F9F9F9;
+	background-color: #f9f9f9;
 	text-align: center;
 	padding-top: 100px;
 
@@ -562,7 +561,7 @@ body {
 	// .casting__body
 
 	&__body {
-		position: relative;		
+		position: relative;
 		&::before {
 			position: absolute;
 			content: "";
@@ -572,7 +571,7 @@ body {
 			left: -10px;
 			bottom: -27px;
 		}
-		position: relative;		
+		position: relative;
 		&::after {
 			position: absolute;
 			content: "";
@@ -588,7 +587,7 @@ body {
 
 	&__image {
 		position: relative;
-		z-index: 99
+		z-index: 99;
 	}
 
 	// .casting__img
@@ -643,7 +642,7 @@ body {
 	// .toolz__body
 
 	&__body {
-		position: relative;		
+		position: relative;
 		&::before {
 			position: absolute;
 			content: "";
@@ -714,7 +713,7 @@ body {
 
 // features
 .features {
-	background-color: #01AFEB;
+	background-color: #01afeb;
 	margin-top: -250px;
 	padding: 275px 30px 50px;
 
@@ -755,8 +754,8 @@ body {
 
 	&__desc {
 		font-weight: 700;
-    font-size: 24px;
-    text-transform: uppercase;
+		font-size: 24px;
+		text-transform: uppercase;
 		margin-bottom: 6px;
 		color: #fff;
 	}
@@ -770,6 +769,100 @@ body {
 	}
 }
 
+// order
+.order {
+	padding: 150px 30px 0;
 
+	// .order__container
 
+	&__container {
+	}
 
+	// .order__inner
+
+	&__inner {
+		padding: 0 30px;
+		display: flex;
+		align-items: center;
+		border: 1px solid #f0f0f0;
+	}
+
+	// .order__left
+
+	&__left {
+		flex: 0 1 361px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .order__link
+
+	&__link {
+		align-self: center;
+	}
+
+	// .order__right
+
+	&__right {
+	}
+}
+.left-order {
+	padding: 36px 30px;
+	text-align: center;
+
+	// .left-order__title
+
+	&__title {
+		margin-bottom: 20px;
+	}
+
+	// .left-order__text
+
+	&__text {
+		margin-bottom: 44px;
+	}
+}
+
+.right-order {
+	display: flex;
+	flex-wrap: wrap;
+
+	// .right-order__item
+
+	&__item {
+		flex: 0 1 50%;
+		padding: 36px 73px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		// border: 1px solid #f0f0f0;
+		border-left: 1px solid #f0f0f0;
+		&:nth-child(1){
+			border-bottom: 1px solid #f0f0f0;
+		}
+		&:nth-child(2){
+			border-bottom: 1px solid #f0f0f0;
+		}
+	}
+
+	&__image {
+		flex: 0 1 100px;
+		margin-bottom: 10px;
+	}
+
+	// .right-order__img
+
+	&__img {
+		
+	}
+
+	// .right-order__text
+
+	&__text {
+		font-weight: 700;
+		font-size: 24px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+}
