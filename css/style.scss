@@ -950,3 +950,76 @@ body {
 		text-align: center;
 	}
 }
+
+// contacts
+.contacts {
+	padding: 150px 0 0;
+
+	// .contacts__container
+
+	&__container {
+	}
+
+	// .contacts__inner
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0 30px;
+	}
+
+	// .contacts__item
+
+	&__item {
+		flex: 0 1 50%;
+	}
+}
+.item-contacts {
+	padding: 47px 58px;
+	&:first-child {
+		background-color: #F83718;
+		color: #fff;
+	}
+
+	// .item-contacts__title
+
+	&__title {
+		font-weight: 700;
+		font-size: 34px;
+		text-transform: uppercase;
+		margin-bottom: 30px;
+	}
+
+	// .item-contacts__text
+
+	&__text {
+		font-weight: 400;
+		font-size: 16px;
+		margin-bottom: 14px;
+	}
+
+	// .item-contacts__link
+
+	&__mail {
+		font-weight: 700;
+		font-size: 30px;
+	}
+
+	// .item-contacts__tel
+
+	&__tel {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 1.5;
+		margin-bottom: 10px;
+	}
+
+	// .item-contacts__address
+
+	&__address {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 1.5;
+	}
+}
