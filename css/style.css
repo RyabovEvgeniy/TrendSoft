@@ -635,11 +635,46 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.right-order__item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 50%;
-          flex: 0 1 50%;
-  padding: 36px 73px;
+.right-order__card {
+  position: relative;
+  border-left: 1px solid #f0f0f0;
+}
+.right-order__card:nth-child(1) {
+  border-bottom: 1px solid #f0f0f0;
+}
+.right-order__card:nth-child(2) {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.card {
+  cursor: pointer;
+  width: 402px;
+  height: 246px;
+}
+.card:hover > .card-front {
+  -webkit-transform: perspective(600px) rotateY(-180deg);
+          transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .card-back {
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
+}
+
+.card-front {
+  padding: 50px 28px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.6s linear;
+  transition: -webkit-transform 0.6s linear;
+  -o-transition: transform 0.6s linear;
+  transition: transform 0.6s linear;
+  transition: transform 0.6s linear, -webkit-transform 0.6s linear;
+  -webkit-transform: perspective(600px) rotateY(0deg);
+          transform: perspective(600px) rotateY(0deg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -653,23 +688,47 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-left: 1px solid #f0f0f0;
 }
-.right-order__item:nth-child(1) {
-  border-bottom: 1px solid #f0f0f0;
-}
-.right-order__item:nth-child(2) {
-  border-bottom: 1px solid #f0f0f0;
-}
-.right-order__image {
+.card-front__image {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 100px;
           flex: 0 1 100px;
   margin-bottom: 10px;
 }
-.right-order__text {
+.card-front__text {
   font-weight: 700;
   font-size: 24px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.card-back {
+  padding: 50px 28px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.6s linear;
+  transition: -webkit-transform 0.6s linear;
+  -o-transition: transform 0.6s linear;
+  transition: transform 0.6s linear;
+  transition: transform 0.6s linear, -webkit-transform 0.6s linear;
+  -webkit-transform: perspective(600px) rotateY(180deg);
+          transform: perspective(600px) rotateY(180deg);
+  background-color: #f83718;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.card-back__text {
+  color: #fff;
+  text-align: center;
 }
