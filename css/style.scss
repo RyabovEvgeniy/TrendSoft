@@ -62,6 +62,7 @@ body {
 
 // header
 .header {
+	background-color: #fff;
 	// .header__container
 
 	&__container {
@@ -295,7 +296,6 @@ body {
 	&__body {
 		margin-top: -200px;
 		margin-bottom: 50px;
-		border: 2px solid #f9f9f9;
 		position: relative;
 		&::before {
 			position: absolute;
@@ -359,7 +359,6 @@ body {
 
 // budget
 .budget {
-	background-color: #f9f9f9;
 	padding-top: 283px;
 	margin-top: -280px;
 
@@ -372,7 +371,6 @@ body {
 
 	&__body {
 		margin-bottom: 50px;
-		border: 2px solid #f9f9f9;
 		position: relative;
 		&::before {
 			position: absolute;
@@ -436,7 +434,6 @@ body {
 
 //pre-production
 .pre-production {
-	background-color: #f9f9f9;
 	padding-top: 283px;
 	margin-top: -280px;
 
@@ -448,8 +445,6 @@ body {
 	// .pre-production__body
 
 	&__body {
-		// margin-bottom: 50px;
-		border: 2px solid #f9f9f9;
 		position: relative;
 		&::before {
 			position: absolute;
@@ -513,7 +508,6 @@ body {
 
 // casting
 .casting {
-	background-color: #f9f9f9;
 	text-align: center;
 	padding-top: 100px;
 
@@ -622,7 +616,6 @@ body {
 
 // toolz
 .toolz {
-	// text-align: center;
 	padding-top: 100px;
 
 	// .toolz__container
@@ -772,7 +765,7 @@ body {
 // order
 .order {
 	background-color: #fff;
-	padding: 150px 30px 0;
+	padding: 150px 0;
 
 	// .order__container
 
@@ -785,7 +778,6 @@ body {
 		padding: 0 30px;
 		display: flex;
 		align-items: center;
-		border: 1px solid #f0f0f0;
 	}
 
 	// .order__left
@@ -794,6 +786,7 @@ body {
 		flex: 0 1 361px;
 		display: flex;
 		flex-direction: column;
+		border: 1px solid #f0f0f0;
 	}
 
 	// .order__link
@@ -805,10 +798,12 @@ body {
 	// .order__right
 
 	&__right {
+		border: 1px solid #f0f0f0;
+		border-left: none;
 	}
 }
 .left-order {
-	padding: 36px 30px;
+	padding: 101px 32px;
 	text-align: center;
 
 	// .left-order__title
@@ -828,44 +823,6 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 
-	// .right-order__item
-
-	// &__item {
-	// 	flex: 0 1 50%;
-	// 	padding: 36px 73px;
-	// 	display: flex;
-	// 	flex-direction: column;
-	// 	justify-content: center;
-	// 	align-items: center;
-	// 	// border: 1px solid #f0f0f0;
-	// 	border-left: 1px solid #f0f0f0;
-	// 	&:nth-child(1) {
-	// 		border-bottom: 1px solid #f0f0f0;
-	// 	}
-	// 	&:nth-child(2) {
-	// 		border-bottom: 1px solid #f0f0f0;
-	// 	}
-	// }
-
-	// &__image {
-	// 	flex: 0 1 100px;
-	// 	margin-bottom: 10px;
-	// }
-
-	// // .right-order__img
-
-	// &__img {
-	// }
-
-	// // .right-order__text
-
-	// &__text {
-	// 	font-weight: 700;
-	// 	font-size: 24px;
-	// 	text-align: center;
-	// 	text-transform: uppercase;
-	// }
-
 	&__card {
 		position: relative;
 		border-left: 1px solid #f0f0f0;
@@ -879,11 +836,6 @@ body {
 }
 
 .card {
-	// position: absolute;
-
-	// top: 50%;
-	// left: 50%;
-	// transform: translate(-50%, -50%);
 	cursor: pointer;
 	width: 402px;
 	height: 246px;

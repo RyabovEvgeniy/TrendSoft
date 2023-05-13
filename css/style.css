@@ -56,6 +56,9 @@ body {
   background-color: #ee816c;
 }
 
+.header {
+  background-color: #fff;
+}
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,7 +243,6 @@ body {
 .planning__body {
   margin-top: -200px;
   margin-bottom: 50px;
-  border: 2px solid #f9f9f9;
   position: relative;
 }
 .planning__body::before {
@@ -287,13 +289,11 @@ body {
 }
 
 .budget {
-  background-color: #f9f9f9;
   padding-top: 283px;
   margin-top: -280px;
 }
 .budget__body {
   margin-bottom: 50px;
-  border: 2px solid #f9f9f9;
   position: relative;
 }
 .budget__body::before {
@@ -339,12 +339,10 @@ body {
       align-self: flex-start;
 }
 .pre-production {
-  background-color: #f9f9f9;
   padding-top: 283px;
   margin-top: -280px;
 }
 .pre-production__body {
-  border: 2px solid #f9f9f9;
   position: relative;
 }
 .pre-production__body::before {
@@ -391,7 +389,6 @@ body {
 }
 
 .casting {
-  background-color: #f9f9f9;
   text-align: center;
   padding-top: 100px;
 }
@@ -590,7 +587,7 @@ body {
 
 .order {
   background-color: #fff;
-  padding: 150px 30px 0;
+  padding: 150px 0;
 }
 .order__inner {
   padding: 0 30px;
@@ -600,7 +597,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #f0f0f0;
 }
 .order__left {
   -webkit-box-flex: 0;
@@ -613,13 +609,19 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border: 1px solid #f0f0f0;
 }
 .order__link {
   -ms-flex-item-align: center;
       align-self: center;
 }
+.order__right {
+  border: 1px solid #f0f0f0;
+  border-left: none;
+}
+
 .left-order {
-  padding: 36px 30px;
+  padding: 101px 32px;
   text-align: center;
 }
 .left-order__title {
